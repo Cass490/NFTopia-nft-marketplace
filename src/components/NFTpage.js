@@ -19,6 +19,7 @@ async function getNFTData(tokenId) {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
     const addr = await signer.getAddress();
+    
     //Pull the deployed contract instance
     let contract = new ethers.Contract(MarketplaceJSON.address, MarketplaceJSON.abi, signer)
     //create an NFT Token

@@ -9,7 +9,7 @@ export default function Marketplace() {
 const sampleData = [
     {
         "name": "NFT#1",
-        "description": "ART",
+        "description": "Literary Dreamscape",
         "website":"http://axieinfinity.io",
         "image":"https://gateway.pinata.cloud/ipfs/QmR13DJdaetafk7AmWR1TvF5oVXA87LCNvFW7Y1vJxkcuj",
         "price":"0.03ETH",
@@ -18,18 +18,18 @@ const sampleData = [
     },
     {
         "name": "NFT#2",
-        "description": "Alchemy's Second NFT",
+        "description": "Renaissance Embrace",
         "website":"http://axieinfinity.io",
-        "image":"https://gateway.pinata.cloud/ipfs/QmdhoL9K8my2vi3fej97foiqGmJ389SMs55oC5EdkrxF2M",
+        "image":"https://gateway.pinata.cloud/ipfs/QmUqt7WqHW1X7fDKm1GT9cxMMZGQxdJSPaJ37TK2Swe2Tu",
         "price":"0.03ETH",
         "currentlySelling":"True",
         "address":"0xe81Bf5A757C4f7F82a2F23b1e59bE45c33c5b13",
     },
     {
         "name": "NFT#3",
-        "description": "Alchemy's Third NFT",
+        "description": "SerenitySplash",
         "website":"http://axieinfinity.io",
-        "image":"https://gateway.pinata.cloud/ipfs/QmTsRJX7r5gyubjkdmzFrKQhHv74p5wT9LdeF1m3RTqrE5",
+        "image":"https://gateway.pinata.cloud/ipfs/QmWd3fV55swsxwd5RTzoYVnWmxb7qkiteMNzhY2q9xQo8S",
         "price":"0.03ETH",
         "currentlySelling":"True",
         "address":"0xe81Bf5A757C4f7F82a2F23b1e59bE45c33c5b13",
@@ -81,7 +81,7 @@ return (
         <Navbar></Navbar>
         <div className="flex flex-col place-items-center mt-20">
             <div className="md:text-xl font-bold text-white">
-                Top NFTs
+<div style={{ fontFamily: 'Georgia' }}>NFT COLLECTION</div>
             </div>
             <div className="flex mt-5 justify-between flex-wrap max-w-screen-xl text-center">
                 {data.map((value, index) => {

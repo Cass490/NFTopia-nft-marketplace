@@ -1,5 +1,6 @@
 require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-ethers");
+require('dotenv').config();
 const fs = require('fs');
 // const infuraId = fs.readFileSync(".infuraid").toString().trim() || "";
 
@@ -15,11 +16,11 @@ module.exports = {
   defaultNetwork: "hardhat",
   networks: {
     hardhat: {
-      chainId: 137
+      chainId: 11155111
     },
     sepolia: {
-      url: process.env.REACT_APP_ALCHEMY_API_URL,
-      accounts: [ process.env.REACT_APP_PRIVATE_KEY ]
+      url: "https://eth-sepolia.g.alchemy.com/v2/Wz1_LWDVMvvzVeuDvPlB8Xdrehq40PDa",
+      accounts: [ "9d6c60d3be338cd701a89d7d4618b9635a695420b69682a4645332a0f87a0546" ]
     }
   },
   solidity: {
